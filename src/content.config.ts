@@ -83,7 +83,11 @@ const cv = defineCollection({
             role: z.string(),
             institution: z.string(),
             period: z.string(),
-            description: z.string(),
+            desc: z.array(
+                    z.object({
+                        title: z.string(),
+                        items: z.array(z.string()),
+                    })).optional()
         })).optional(),
         education: z.array(z.object({
             degree: z.string(),

@@ -3,7 +3,7 @@ export interface TimelineItemData {
     title: string;
     period: string;
     subtitle: string;
-    description?: string;
+    desc?: DescriptionSection[];
     thesis?: string;
 }
 
@@ -11,7 +11,13 @@ interface Props {
     items: TimelineItemData[];
 }
 
+interface DescriptionSection {
+    title: string;
+    items: string[];
+}
+
 const { items } = Astro.props;
+console.log(items);
 ---
 
 <div class="timeline flex flex-col">
@@ -31,14 +37,27 @@ const { items } = Astro.props;
                             {item.period}
                         </span>
                     </div>
-                    <div class="body font-semibold opacity-90">
+                    <div class="body font-bold opacity-90 !text-xl">
                         {item.subtitle}
                     </div>
-                    {item.description && (
-                        <div class="body mt-2">
-                            {item.description}
-                        </div>
-                    )}
+                    {item.desc?.length > 0 && (
+                            <div class="mt-1 space-y-4">
+                                {item.desc.map((section) => (
+                                    <div>
+                                        <div class="font-semibold opacity-90">
+                                            {section.title}
+                                        </div>
+
+                                        <ul class="list-disc ml-2">
+                                            {section.items.map((it) => (
+                                                <li>{it}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                
                     {item.thesis && (
                         <div class="body italic mt-2 opacity-80">
                             Thesis: {item.thesis}
