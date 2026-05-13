@@ -1,8 +1,8 @@
 ---
-name: "Claude Shannon"
-avatar: "shannon.jpg"
-shortBio: "Mathematician and electrical engineer known as the 'Father of Information Theory'. Pioneer in digital computing and cryptography."
-institution: "MIT, Cambridge MA"
+name: "Толмачев Никита"
+avatar: "avatar.jpg"
+shortBio: "Java-разработчик, который строит и развивает сложные системы, наводит порядок в архитектуре и помогает командам расти."
+institution: "Diasoft"
 ---
 
 I am a mathematician and electrical engineer best known for founding **Information Theory**. My work in the late 1940s established the theoretical foundations of modern digital communications and computing.
