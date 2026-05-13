@@ -2,31 +2,64 @@
 name: "Claude Shannon"
 title: "Mathematician and Electrical Engineer"
 experience:
-  - role: "Research Mathematician"
-    institution: "Bell Telephone Laboratories"
-    period: "1941 - 1972"
-    description: "Conducted groundbreaking research in information theory, cryptography, and digital computing."
-  - role: "Professor of Electrical Engineering"
-    institution: "MIT"
-    period: "1958 - 1978"
-    description: "Taught courses in information theory, switching theory, and mathematical foundations of computing."
+  - role: "Java-developer / Tech Lead"
+    institution: "Diasoft - Information technology"
+    period: "2024 - н.в."
+    description: "Центр управленческих решений
+- Разработал приложение интегрированное с 15 приложениями в композитной архитектуре
+- Выполнял до 80% задач DevOps (конфигурировал постоянно Deployment Config, Jobs, Config Maps, Secrets)
+Снабжение производства (ERP-система)
+- Разработал приложения в композитной архитектуре с 5 end-to-end процессов, интегрировав их с 10+ системами
+Аналитическое приложение ГИС ПУР:
+- Реализована витрина данных и сервис по их сбору из 3-х систем, для построения отчетности и дашбордов на более чем десятков миллионов записей
+Также:
+- Формировал и следил за техдолгом, координировал работу разработчиков
+- Инициировал и проводил митапы"
+  - role: "Java-developer / Tech Lead"
+    institution: "Rosbank"
+    period: "2019 - 2024"
+    description: " В роли ведущего разработчика и тех-лида
+    Спроектировал и реализовал 5 микросервисов для личного кабинета самозанятых, с ежемесячным приростом пользователей 20k+.
+- Поддерживал и дорабатывал высоконагруженный сервис платежей, увеличив скорость проведения транзакций в 2,8 раза.
+- Организовал процесс code review и регламент написания кода: test coverage не опускался ниже 80%.
+- Руководил командой из 3 Java-разработчиков, планировал спринты, распределял задачи и контролировал сроки по Agile
+ 
+ В роли разработчика
+
+- Участвовал в разработке зарплатного проекта для юр. лиц: внедрил TestContainers, увеличил test coverage в 2,5 раза.
+- Реализовал сервис блокировки продуктов клиента-банкрота и настроил первое подключение к Kafka (SSL, Kerberos) в кластере: мой DeploymentConfig сократил время развертывания в 3 раза.
+- Реализовал сервис переноса встречи доставки карт (интеграция с WSO2/SOAP), что оптимизировало процесс доставки.
+- Разработал унифицированный сервис выгрузки данных на FTP, гибко настраиваемый для разных систем.
+
+ Личные проекты для компании
+
+ - Создал Telegram-бота для интеграции с Jira: обрабатывает 200+ тикетов ежемесячно, используется в 50+ рабочих чатах, использовал его также для онбординга и обучения новых сотрудников.
+- Разработал приложение для индивидуальных планов развития сотрудников (интеграция с GitLab REST API), автоматизировав постановку задач и мониторинг прогресса.
+"
 education:
-  - degree: "PhD in Mathematics"
-    institution: "MIT"
-    period: "1936 - 1940"
-    thesis: "An Algebra for Theoretical Genetics"
-    description: "Developed mathematical foundations for genetic inheritance."
-  - degree: "Bachelor of Science in Electrical Engineering"
-    institution: "University of Michigan"
-    period: "1932 - 1936"
+  - degree: "Прикладная математика и информатика"
+    institution: "Волгоградский государственный университет"
+    period: "2016 - 2021"
+  - degree: "Информационная безопасность телекоммуникационных систем"
+    institution: "Институт криптографии, связи и информатики"
+    period: "2016 - 2021"
 ---
 
-## Skills
-- Information Theory
-- Mathematics
-- Electrical Engineering
-- Cryptography
-- Computer Science
+## Stack
 
-## Biographical Summary
-Extra biographical notes or a summary can go here.
+* Java 17+
+* Spring Boot, Spring Framework
+* Hibernate, Criteria API
+* REST, SOAP, Kafka (Avro, Schema Registry, Kafka Connect)
+* PostgreSQL, OracleDB, ClickHouse
+* JUnit, TestContainers, JaCoCo
+* Docker, Kubernetes, Linux, Prometheus, Grafana
+* Git, GitLab, Bitbucket, Jenkins, Maven, Gradle
+
+## Обо мне
+
+Более 4 лет опыта в IT как разработчик. Активно участвую в менторстве и развитии новых специалистов:
+- Осуществляю сode review
+- Провожу регулярные обучающие митапы
+- Помощь в обучении и развитии
+- Провожу онбординг, используя для этого свои личные проекты 
