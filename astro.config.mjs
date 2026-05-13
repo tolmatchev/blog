@@ -19,6 +19,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   site: 'https://rubzip.github.io',
-  base: '/academic-portfolio-astro',
+  base: '/',
   integrations: [sitemap()],
 });
