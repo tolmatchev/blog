@@ -17,7 +17,6 @@ interface DescriptionSection {
 }
 
 const { items } = Astro.props;
-console.log(items);
 ---
 
 <div class="timeline flex flex-col">
@@ -40,21 +39,18 @@ console.log(items);
                     <div class="body font-bold opacity-90 !text-xl">
                         {item.subtitle}
                     </div>
-                    {item.desc?.length > 0 && (
-                            <div class="mt-1 space-y-4">
-                                {item.desc.map((section) => (
+                    {item.desc?.map((section) =>
+                            <div class="mt-1">
                                     <div>
                                         <div class="font-semibold opacity-90">
                                             {section.title}
                                         </div>
-
-                                        <ul class="list-disc ml-0">
+                                        <ul class="list-disc !m-0">
                                             {section.items.map((it) => (
                                                 <li class="!m-0 leading-snug" set:html={it}>{it}</li>
                                             ))}
                                         </ul>
                                     </div>
-                                ))}
                             </div>
                         )}
                 
