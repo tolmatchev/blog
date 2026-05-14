@@ -41,9 +41,10 @@ const { items } = Astro.props;
                             </p>
                         </span>
                     </div>
-                    <div class="body font-bold opacity-90">
-                        {item.subtitle}
-                    </div>
+                    <p class="sidebar-work-place font-bold">
+                                <Icon name="Work" size={24} />
+                                {item.subtitle}
+                    </p>
                     {item.desc?.map((section) =>
                             <div class="mt-1">
                                     <div>

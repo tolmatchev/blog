@@ -3,7 +3,7 @@ name: "Claude Shannon"
 title: "Mathematician and Electrical Engineer"
 experience:
   - role: "Java-developer / Tech Lead"
-    institution: "Diasoft - Information technology"
+    institution: "Diasoft"
     period: "2024 - н.в."
     desc:
       - title: "Центр управленческих решений"
@@ -21,7 +21,7 @@ experience:
           - "Формировал и следил за техдолгом, координировал работу разработчиков"
           - "Инициировал и проводил митапы"
   - role: "Java-developer / Tech Lead"
-    institution: "Rosbank"
+    institution: "Лига Цифровой Экономики (Росбанк) "
     period: "2019 - 2024"
     desc:
       - title: "В роли ведущего разработчика и тех-лида"
