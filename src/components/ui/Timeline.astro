@@ -48,9 +48,9 @@ console.log(items);
                                             {section.title}
                                         </div>
 
-                                        <ul class="list-disc ml-2">
+                                        <ul class="list-disc ml-0">
                                             {section.items.map((it) => (
-                                                <li>{it}</li>
+                                                <li class="!m-0 leading-snug" set:html={it}>{it}</li>
                                             ))}
                                         </ul>
                                     </div>
