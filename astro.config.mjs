@@ -22,6 +22,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   site: 'https://rubzip.github.io',
-  base: '/tolmachev',
+  base: '/tolmach-blog-ui',
   integrations: [sitemap()],
 });
