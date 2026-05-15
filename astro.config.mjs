@@ -12,6 +12,9 @@ export default defineConfig({
     remarkPlugins: [remarkMath],
     rehypePlugins: [rehypeKatex],
   },
+  devToolbar: {
+    enabled: false,
+  },
   build: {
     inlineStylesheets: 'always'
   },
