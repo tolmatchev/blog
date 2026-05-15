@@ -21,7 +21,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: 'https://rubzip.github.io',
+  site: 'https://guzime.github.io/',
   base: '/tolmach-blog-ui',
   integrations: [sitemap()],
 });
