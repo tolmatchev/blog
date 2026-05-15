@@ -38,7 +38,7 @@ export const PAGES: PagesConfig = {
     },
     cv: {
         title: "",
-        subtitle: "",
+        subtitle: "Скачать в формате PDF",
         isActive: true,
     },
 };

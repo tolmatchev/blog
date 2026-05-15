@@ -4,6 +4,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Timeline from "../../components/ui/Timeline.astro";
 import Skill from "../../components/layout/Skill.astro";
 import { PAGES } from "../../config";
+import Icon from "../../components/ui/Icon.astro";
 
 if (PAGES.cv.isActive === false) {
   return Astro.redirect("/404");
@@ -36,19 +37,24 @@ const integration = [
 ];
 
 const databases = ["PostgreSQL", "OracleDB", "ClickHouse"];
-
 const testing = ["JUnit", "TestContainers", "JaCoCo"];
-
 const devops = ["Docker", "Kubernetes", "Linux", "Prometheus", "Grafana"];
-
 const tools = ["Git", "GitLab", "Bitbucket", "Jenkins", "Maven", "Gradle"];
 ---
 
 <BaseLayout title={PAGES.cv.title}>
-  <header class="page-header">
-    <h1 class="page-title">{PAGES.cv.title}</h1>
-    <p class="page-subtitle">{PAGES.cv.subtitle}</p>
-  </header>
+    <div class="flex justify-end">
+<a
+    href={`/pdf/CV_TOLMACHEV_NIKITA_JAVA_DEV.pdf`}
+    class="nav-prev flex group max-w-[45%] no-underline sidebar-work-place"
+  >
+    <span
+      class="nav-title text-lg font-semibold text-foreground group-hover:text-accent transition-colors duration-200 leading-snug"
+      >Скачать в PDF</span
+    >
+    <Icon name="Download" size={30} />
+  </a>
+  </div>
 
   <div class="container-narrow">
     {
