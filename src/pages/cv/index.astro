@@ -2,6 +2,7 @@
 import { getEntry, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Timeline from "../../components/ui/Timeline.astro";
+import Skill from "../../components/layout/Skill.astro";
 import { PAGES } from "../../config";
 
 if (PAGES.cv.isActive === false) {
@@ -17,6 +18,9 @@ if (!cvEntry) {
 
 const { Content } = await render(cvEntry);
 const { name, title, experience = [], education = [] } = cvEntry.data;
+const languages = ['Html', 'JavaScript', 'CSS', 'Shell']
+const frontend = ['TypeScript', 'Vite', 'Webpack', 'Astro']
+const backend = ['Vercel', 'Waline']
 ---
 
 <BaseLayout title={PAGES.cv.title}>
@@ -44,6 +48,12 @@ const { name, title, experience = [], education = [] } = cvEntry.data;
 
         <div class="prose max-w-none">
             <Content />
+        </div>
+
+        <div>
+            <Skill title='Languages' skills={languages} />
+            <Skill title='Frontend' skills={frontend} />
+            <Skill title='Backend' skills={backend} />
         </div>
 
         {
