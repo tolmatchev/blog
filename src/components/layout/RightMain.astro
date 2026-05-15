@@ -1,12 +1,16 @@
 ---
 import Navbar from "./Navbar.astro";
 import Footer from "./Footer.astro";
+
+import { SETTINGS } from "../../config";
+
+const showDevTools = SETTINGS.showNavBar;
 ---
 
 <div class="main-content">
-    <Navbar />
-    <div class="main-body animate-in">
-        <slot />
-    </div>
-    <Footer />
+  {showDevTools && <Navbar />}
+  <div class="main-body animate-in">
+    <slot />
+  </div>
+  <Footer />
 </div>
