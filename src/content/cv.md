@@ -51,21 +51,10 @@ education:
     period: "2016 - 2021"
 ---
 
-## Stack
-
-* Java 17+
-* Spring Boot, Spring Framework
-* Hibernate, Criteria API
-* REST, SOAP, Kafka (Avro, Schema Registry, Kafka Connect)
-* PostgreSQL, OracleDB, ClickHouse
-* JUnit, TestContainers, JaCoCo
-* Docker, Kubernetes, Linux, Prometheus, Grafana
-* Git, GitLab, Bitbucket, Jenkins, Maven, Gradle
-
 ## Обо мне
 
-Более 4 лет опыта в IT как разработчик. Активно участвую в менторстве и развитии новых специалистов:
-Осуществляю сode review
+Более 6 лет опыта в IT как разработчик. Активно участвую в менторстве и развитии новых специалистов:
+- Осуществляю сode review
 - Провожу регулярные обучающие митапы
 - Помощь в обучении и развитии
 - Провожу онбординг, используя для этого свои личные проекты 
