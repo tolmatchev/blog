@@ -22,6 +22,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   site: 'https://guzime.github.io',
-  base: '/tolmach-blog-ui/',
+  base: '/blog/',
   integrations: [sitemap()],
 });
