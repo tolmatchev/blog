@@ -22,7 +22,7 @@ export const SETTINGS: SettingsConfig = {
     showTagsInNavbar: true,
     showRSSInFooter: true,
     addDevToolsInProduction: false,
-    showNavBar: false,
+    showNavBar: true,
 };
 
 const umami: UmamiAnalyticsConfig = {

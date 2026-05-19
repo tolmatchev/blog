@@ -17,8 +17,8 @@ export const PAGES: PagesConfig = {
         isActive: true,
     },
     knowledge: {
-        title: "Talks & Presentations",
-        subtitle: "Public lectures, colloquia, and conference presentations.",
+        title: "Моя база знаний",
+        subtitle: "Здесь я собираю свой материал по нужным мне темам",
         isActive: true,
     },
     projects: {
