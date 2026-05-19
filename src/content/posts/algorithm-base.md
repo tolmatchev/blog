@@ -96,7 +96,7 @@ public void swap(int a, int b) {
 ```
 
 Решение:
-
+```java
 public int[] plusOne(int[] digits) {
     for (int i = digits.length - 1; i >= 0; i--) {
         if (digits[i] != 9) {
@@ -109,6 +109,7 @@ public int[] plusOne(int[] digits) {
     result[0] = 1;
     return result;
 }
+```
 Время: O(n)
 Память: O(n)
 Поиск позиции вставки в отсортированном массиве
