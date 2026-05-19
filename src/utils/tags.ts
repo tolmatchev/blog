@@ -2,12 +2,12 @@ import { getCollection } from 'astro:content';
 
 export async function getAllTags() {
     const publications = await getCollection('publications');
-    const talks = await getCollection('talks');
+    const knowledge = await getCollection('knowledge');
     const projects = await getCollection('projects');
     const posts = await getCollection('posts');
     const teaching = await getCollection('teaching');
 
-    const allEntries = [...publications, ...talks, ...projects, ...posts, ...teaching];
+    const allEntries = [...publications, ...knowledge, ...projects, ...posts, ...teaching];
     const tags: Record<string, number> = {};
 
     allEntries.forEach(entry => {
@@ -29,7 +29,7 @@ export async function getContentByTag(tag: string) {
     const normalizedSearchTag = tag.toLowerCase();
 
     const publications = await getCollection('publications');
-    const talks = await getCollection('talks');
+    const knowledge = await getCollection('knowledge');
     const projects = await getCollection('projects');
     const posts = await getCollection('posts');
     const teaching = await getCollection('teaching');
@@ -41,7 +41,7 @@ export async function getContentByTag(tag: string) {
 
     return [
         ...publications.filter(filterFn).map(e => ({ ...e, collection: 'publications' })),
-        ...talks.filter(filterFn).map(e => ({ ...e, collection: 'talks' })),
+        ...knowledge.filter(filterFn).map(e => ({ ...e, collection: 'knowledge' })),
         ...projects.filter(filterFn).map(e => ({ ...e, collection: 'projects' })),
         ...posts.filter(filterFn).map(e => ({ ...e, collection: 'posts' })),
         ...teaching.filter(filterFn).map(e => ({ ...e, collection: 'teaching' })),

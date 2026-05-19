@@ -16,7 +16,7 @@ export const PAGES: PagesConfig = {
         subtitle: "A collection of research papers and scientific articles.",
         isActive: true,
     },
-    talks: {
+    knowledge: {
         title: "Talks & Presentations",
         subtitle: "Public lectures, colloquia, and conference presentations.",
         isActive: true,

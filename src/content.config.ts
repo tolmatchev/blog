@@ -16,8 +16,8 @@ const publications = defineCollection({
     }),
 });
 
-const talks = defineCollection({
-    loader: glob({ pattern: "**/*.md", base: "./src/content/talks" }),
+const knowledge = defineCollection({
+    loader: glob({ pattern: "**/*.md", base: "./src/content/knowledge" }),
     schema: z.object({
         title: z.string(),
         date: z.string().optional(),
@@ -101,7 +101,7 @@ const cv = defineCollection({
 
 export const collections = {
     'publications': publications,
-    'talks': talks,
+    'knowledge': knowledge,
     'posts': posts,
     'bio': bio,
     'projects': projects,

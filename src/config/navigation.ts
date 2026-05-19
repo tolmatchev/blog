@@ -3,7 +3,7 @@ import type { NavLink } from "../types";
 export const NAV_LINKS: NavLink[] = [
     { href: "/", label: "About", isActive: false },
     { href: "/publications", label: "Publications", isActive: false },
-    { href: "/talks", label: "Knowledge", isActive: false },
+    { href: "/knowledge", label: "Knowledge", isActive: true },
     { href: "/teaching", label: "Teaching", isActive: false },
     { href: "/projects", label: "Code", isActive: false },
     { href: "/posts", label: "Blog", isActive: false },
