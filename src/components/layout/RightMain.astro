@@ -4,7 +4,7 @@ import Footer from "./Footer.astro";
 
 import { SETTINGS } from "../../config";
 
-const showDevTools = SETTINGS.showNavBar;
+const showDevTools = import.meta.env.DEV || SETTINGS.showNavBar;
 ---
 
 <div class="main-content">

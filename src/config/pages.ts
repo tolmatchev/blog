@@ -4,10 +4,10 @@ export const PAGES: PagesConfig = {
     home: {
         title: "About Me",
         subtitle: "",
-        isActive: true,
+        isActive: false,
     },
     blog: {
-        title: "Blog",
+        title: "Блог",
         subtitle: "Thoughts on physics, philosophy, and music.",
         isActive: true,
     },
@@ -37,8 +37,8 @@ export const PAGES: PagesConfig = {
         isActive: true,
     },
     cv: {
-        title: "",
-        subtitle: "Скачать в формате PDF",
+        title: "My CV",
+        subtitle: "",
         isActive: true,
     },
 };

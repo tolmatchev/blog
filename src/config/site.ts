@@ -1,13 +1,14 @@
 import type { SiteConfig, ThemeConfig, SettingsConfig, UmamiAnalyticsConfig, AnalyticsConfig } from "../types";
 
 export const SITE: SiteConfig = {
-    website: "https://shannon.github.io/academic-portfolio-astro/",
+    website: "https://tolmatchev.github.io/blog/",
     author: "Tolmachev Nikita",
     desc: "Персональный блог и портфолио Толмачева Никиты",
     title: "Толмачев Никита",
     ogImage: "shannon.webp",
     postPerPage: 5,
     favicon: "/favicon.svg",
+    ico: "/favicon.ico",
     lang: "en",
 };
 

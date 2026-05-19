@@ -6,6 +6,7 @@ export interface SiteConfig {
     ogImage: string;
     postPerPage: number;
     favicon: string;
+    ico: string;
     lang: string;
 }
 
