@@ -24,9 +24,10 @@ export function getListingItem(entry: any, collection?: string): ListingItem {
 
 export function getDetailItem(entry: any, collection: string): DetailItem {
     const listing = getListingItem(entry, collection);
-    
+    const base = import.meta.env.BASE_URL;
+
     return {
         ...listing,
-        backHref: collection === 'posts' ? '/posts' : `/${collection}`,
+        backHref: `${base}${collection}`,
     };
 }
