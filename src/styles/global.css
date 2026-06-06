@@ -716,6 +716,48 @@ a:hover,
     margin: 2rem 0;
 }
 
+.prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.prose thead {
+    background: var(--surface);
+}
+
+.prose th,
+.prose td {
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--border);
+    vertical-align: top;
+}
+
+.prose th {
+    font-weight: 700;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.prose tbody tr:nth-child(even) {
+    background: color-mix(in srgb, var(--surface) 40%, transparent);
+}
+
+.prose tbody tr:hover {
+    background: color-mix(in srgb, var(--accent) 8%, transparent);
+}
+
+.prose table code {
+    font-size: 0.85em;
+    background: transparent;
+    padding: 0;
+}
+
+.prose table a {
+    font-weight: 600;
+}
 
 /* ===========================================
    SHARED COMPONENTS
