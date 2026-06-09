@@ -6,6 +6,7 @@ interface Props {
 }
 
 const { name, count, size = "md" } = Astro.props;
+const base = import.meta.env.BASE_URL;
 
 const sizeClasses = {
     sm: "text-xs",
@@ -14,7 +15,7 @@ const sizeClasses = {
 };
 ---
 
-<a href={`/tags/${name.toLowerCase()}`} class={`tag ${sizeClasses[size]}`}>
+<a href={`${base}tags/${name.toLowerCase()}`} class={`tag ${sizeClasses[size]}`}>
     #{name}
     {count !== undefined && <span class="opacity-60 ml-1">({count})</span>}
 </a>

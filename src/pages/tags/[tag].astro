@@ -17,6 +17,8 @@ const { tag } = Astro.params;
 const { tagName } = Astro.props;
 
 const content = await getContentByTag(tagName);
+const base = import.meta.env.BASE_URL;
+console.log('abobus' + base);
 ---
 
 <BaseLayout title={`#${tagName}`}>
@@ -36,7 +38,8 @@ const content = await getContentByTag(tagName);
                 tags: item.data.tags,
                 externalUrl: item.data.external_url,
             };
-            const href = `/${item.collection}/${item.id}`;
+            const href = `${base}${item.collection}/${item.id}`;
+            console.log('abobus' + href);
             return <BaseItemCard {...listingItem} href={href} />;
         })}
     </section>
