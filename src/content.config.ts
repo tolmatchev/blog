@@ -2,20 +2,6 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'zod';
 
-const publications = defineCollection({
-    loader: glob({ pattern: "**/*.md", base: "./src/content/publications" }),
-    schema: z.object({
-        title: z.string(),
-        author: z.string().optional(),
-        date: z.string().optional(),
-        journal: z.string().optional(),
-        external_url: z.string().optional(),
-        image: z.string().optional(),
-        description: z.string().optional(),
-        tags: z.array(z.string()).optional(),
-    }),
-});
-
 const knowledge = defineCollection({
     loader: glob({ pattern: "**/*.md", base: "./src/content/knowledge" }),
     schema: z.object({
@@ -100,7 +86,6 @@ const cv = defineCollection({
 });
 
 export const collections = {
-    'publications': publications,
     'knowledge': knowledge,
     'posts': posts,
     'bio': bio,

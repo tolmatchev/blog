@@ -11,11 +11,6 @@ export const PAGES: PagesConfig = {
         subtitle: "Мои небольшие статьи на темы, которые меня интересуют",
         isActive: true,
     },
-    publications: {
-        title: "Publications",
-        subtitle: "A collection of research papers and scientific articles.",
-        isActive: true,
-    },
     knowledge: {
         title: "Моя база знаний",
         subtitle: "Здесь я собираю свой материал по нужным мне темам",

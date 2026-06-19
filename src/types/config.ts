@@ -19,7 +19,6 @@ export interface ThemeConfig {
 export interface SettingsConfig {
     showTagsInNavbar: boolean;
     showRSSInFooter: boolean;
-    addDevToolsInProduction: boolean;
     showNavBar: boolean;
 }
 

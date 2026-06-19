@@ -1,13 +1,12 @@
 import { getCollection } from 'astro:content';
 
 export async function getAllTags() {
-    const publications = await getCollection('publications');
     const knowledge = await getCollection('knowledge');
     const projects = await getCollection('projects');
     const posts = await getCollection('posts');
     const teaching = await getCollection('teaching');
 
-    const allEntries = [...publications, ...knowledge, ...projects, ...posts, ...teaching];
+    const allEntries = [...knowledge, ...projects, ...posts, ...teaching];
     const tags: Record<string, number> = {};
 
     allEntries.forEach(entry => {
@@ -27,8 +26,6 @@ export async function getAllTags() {
 
 export async function getContentByTag(tag: string) {
     const normalizedSearchTag = tag.toLowerCase();
-
-    const publications = await getCollection('publications');
     const knowledge = await getCollection('knowledge');
     const projects = await getCollection('projects');
     const posts = await getCollection('posts');
@@ -40,7 +37,6 @@ export async function getContentByTag(tag: string) {
     };
 
     return [
-        ...publications.filter(filterFn).map(e => ({ ...e, collection: 'publications' })),
         ...knowledge.filter(filterFn).map(e => ({ ...e, collection: 'knowledge' })),
         ...projects.filter(filterFn).map(e => ({ ...e, collection: 'projects' })),
         ...posts.filter(filterFn).map(e => ({ ...e, collection: 'posts' })),
